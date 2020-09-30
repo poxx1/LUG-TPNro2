@@ -1,6 +1,6 @@
 ﻿namespace LastraJulianTP2
 {
-    partial class Form1
+    partial class UILogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
