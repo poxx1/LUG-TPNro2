@@ -9,7 +9,7 @@ namespace Mapper
         {
             var bdc = new BDConnection();
             string query = "EXEC [InsertUser] @UserN = N'" + user.UserName + "', @Pass = N'"+user.PassWord+"'";
-            return bdc.InsertUsuarios(query);
+            return bdc.Insert(query);
         }
     }
 }
