@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersFRM.Designer.cs">
+      <DependentUpon>UsersFRM.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -65,6 +71,9 @@
     </Compile>
     <EmbeddedResource Include="UILogin.resx">
       <DependentUpon>UILogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersFRM.resx">
+      <DependentUpon>UsersFRM.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +87,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE_Propiedades\BE_Propiedades.csproj">
+      <Project>{73c186df-9cd0-4ca4-85a8-2b5ec5a19d3f}</Project>
+      <Name>BE_Propiedades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL_Negocio\BLL_Negocio.csproj">
+      <Project>{21617dc4-84ae-4b5c-bdc8-9b2e4cc760c6}</Project>
+      <Name>BLL_Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
