@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Programs Program="ElasticSearch">
+  <Version>v2.03</Version>
+  <Platform>Unix</Platform>
+  <Programs Program="logStash">
+    <Version>v1.02</Version>
+    <Platform>Unix</Platform>
+  </Programs>
+</Programs>

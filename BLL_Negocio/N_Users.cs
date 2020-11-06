@@ -19,16 +19,16 @@ namespace BLL_Negocio
             var us = new MUsers();
             return us.Insert(u);
         }
-        //public bool Update(BEUsers u)
-        //{
-        //    var us = new MUsers();
-        //    return us.Update(u);
-        //}
-        //public bool Delete(BEUsers u)
-        //{
-        //    var us = new MUsers();
-        //    return us.Delete(u);
-        //}
+        public bool Update(BE_Users u)
+        {
+            var us = new MUsers();
+            return us.Update(u);
+        }
+        public bool Delete(BE_Users u)
+        {
+            var us = new MUsers();
+            return us.Delete(u);
+        }
 
     }
 }
