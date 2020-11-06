@@ -26,6 +26,16 @@ namespace LastraJulianTP2
         {
             var x = new XML();
             x.Write(textBox1.Text, textBox2.Text, textBox3.Text);
+          
+            listBox1.DataSource = x.Read();
+            listBox1.DisplayMember = "name";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var x = new XML();
+            listBox1.DataSource = x.Read();
+            listBox1.DisplayMember = "name";
         }
     }
 }

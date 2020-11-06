@@ -1,6 +1,7 @@
-﻿using System;
+﻿using BE_Propiedades;
+using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -8,9 +9,24 @@ namespace BLL_Negocio
 {
     public class XML
     {
-        public void Read()
+        public List<BE_Programs> Read()
         {
-            
+            //en load va la direccion del archivo, si pongo solo el nombre, es xq e guarda en el servidor
+            //luego los elementos y atributos como estan estructurado en el XML
+
+            string path = @"C:\Users\Poxi\Documents\UAI\2020\LUG\TP 2\LUG-TPNro2\Documentos\ServersList.xml";
+
+            var query =
+                from Programs in XElement.Load(path).Elements("Programs")
+                select new BE_Programs
+                {
+                    name = Convert.ToString(Programs.Attribute("Program").Value).Trim(),
+                    version = Convert.ToString(Programs.Element("Version").Value).Trim(),
+                    platform = Convert.ToString(Programs.Element("Platform").Value).Trim()
+                };
+
+            List<BE_Programs> List_Programs = query.ToList<BE_Programs>();
+            return List_Programs;
         }
 
         public void Write(string prog, string ver, string platf)

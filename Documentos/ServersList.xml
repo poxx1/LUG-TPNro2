@@ -6,4 +6,16 @@
     <Version>v1.02</Version>
     <Platform>Unix</Platform>
   </Programs>
+  <Programs Program="Kibana">
+    <Version>v1.0.3</Version>
+    <Platform>Windows</Platform>
+  </Programs>
+  <Programs Program="ElasticSerarch">
+    <Version>v2.03</Version>
+    <Platform>Unix</Platform>
+  </Programs>
+  <Programs Program="SQL Manager">
+    <Version>18.03</Version>
+    <Platform>Windows</Platform>
+  </Programs>
 </Programs>

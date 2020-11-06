@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BE_Propiedades
 {
-    class BE_Programs
+    public class BE_Programs
     {
         public string name { get; set; }
         public string version { get; set;}
