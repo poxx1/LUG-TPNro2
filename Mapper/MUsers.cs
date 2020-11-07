@@ -24,5 +24,12 @@ namespace Mapper
             string query = "EXEC [DeleteUser] @User = N'" + user.UserName + "'";
             return bdc.Insert(query);
         }
+
+        public string[] Validate(BE_Propiedades.BE_Users user)
+        {
+            var bdc = new BDConnection();
+            string query = "SELECT * From Users WHERE UserName = '"+user.UserName+"'";
+            return bdc.Select(query);
+        }
     }
 }

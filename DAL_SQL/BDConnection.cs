@@ -65,7 +65,66 @@ namespace DAL_SQL
             }
 
         }
+        public string[] Select(string query)
+        {
+            //var user = new object();
+            //var password = new object();
 
+            var cn = new SqlConnection(@"Server=DESKTOP-H982BU0\SQLEXPRESS; Initial Catalog=LastraJulianDev;Integrated Security=True");
+            var cmd = new SqlCommand();
+
+            cn.Open();
+
+            cmd.CommandTimeout = 5;
+
+            SqlTransaction myTrans;
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = cn;
+            cmd.CommandText = query;
+
+            myTrans = cn.BeginTransaction();
+
+            cmd.Transaction = myTrans;
+
+            string[] user = new string[2];
+
+            //Ejecuto la consulta
+            try
+            {
+                using (SqlDataReader dr = cmd.ExecuteReader())
+
+                    if (dr.HasRows)
+                    {
+                        while (dr.Read())
+                        {
+                            user[0] = dr[0].ToString();
+                            user[1] = dr[1].ToString();
+                        }
+                    }
+                    else
+                    {
+                        user[0] = "No existen ocurrencias para el server";
+                    }
+
+                myTrans.Commit();
+
+                return user;
+            }
+            catch (SqlException e)
+            {
+                myTrans.Rollback();
+                throw e;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+        }
         public bool TestConnection()
         {
 

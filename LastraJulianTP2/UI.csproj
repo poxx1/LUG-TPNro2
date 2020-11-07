@@ -57,11 +57,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI_Core.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Core.Designer.cs">
+      <DependentUpon>UI_Core.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_LoginEN-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UI_LoginEN-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI_LoginES-AR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UI_LoginES-AR.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI_Programs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI_Programs.Designer.cs">
       <DependentUpon>UI_Programs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ProgramsEN-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UI_ProgramsEN-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ProgramsES-AR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UI_ProgramsES-AR.resx</DependentUpon>
     </Compile>
     <Compile Include="UsersFRM.cs">
       <SubType>Form</SubType>
@@ -81,8 +107,27 @@
     <EmbeddedResource Include="UILogin.resx">
       <DependentUpon>UILogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI_Core.resx">
+      <DependentUpon>UI_Core.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_LoginEN-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UI_LoginEN-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_LoginES-AR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UI_LoginES-AR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI_Programs.resx">
       <DependentUpon>UI_Programs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ProgramsEN-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UI_ProgramsEN-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ProgramsES-AR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UI_ProgramsES-AR.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UsersFRM.resx">
       <DependentUpon>UsersFRM.cs</DependentUpon>

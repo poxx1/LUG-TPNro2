@@ -30,5 +30,10 @@ namespace BLL_Negocio
             return us.Delete(u);
         }
 
+        public string[] LoadUsers(BE_Users u)
+        {
+            var us = new MUsers();
+            return us.Validate(u);
+        }
     }
 }
