@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BE_Propiedades
+﻿namespace BE_Propiedades
 {
     public class BE_Programs
     {
