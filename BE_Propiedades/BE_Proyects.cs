@@ -10,5 +10,6 @@ namespace BE_Propiedades
         public BE_Client Client{get;set;} 
         public bool Is_Active { get; set;}
         public DateTime StartDate { get; set; }
+        public int WBS { get; set; }
     }
 }

@@ -60,8 +60,8 @@ namespace LastraJulianTP2
         {
             textBox1.Text = "admin";
             textBox2.Text = "admin";
+            label3.Text = "Usuario para login cargado";
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             //LOGIN

@@ -89,6 +89,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UI_ProgramsES-AR.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI_Proyects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Proyects.Designer.cs">
+      <DependentUpon>UI_Proyects.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsersFRM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     <EmbeddedResource Include="UI_ProgramsES-AR.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>UI_ProgramsES-AR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Proyects.resx">
+      <DependentUpon>UI_Proyects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsersFRM.resx">
       <DependentUpon>UsersFRM.cs</DependentUpon>
