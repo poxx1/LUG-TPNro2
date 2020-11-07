@@ -57,6 +57,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Client.Designer.cs">
+      <DependentUpon>UI_Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI_Core.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,12 @@
     <Compile Include="UI_Proyects.Designer.cs">
       <DependentUpon>UI_Proyects.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl.Designer.cs">
+      <DependentUpon>UserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsersFRM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,9 @@
     </Compile>
     <EmbeddedResource Include="UILogin.resx">
       <DependentUpon>UILogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Client.resx">
+      <DependentUpon>UI_Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI_Core.resx">
       <DependentUpon>UI_Core.cs</DependentUpon>
@@ -137,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI_Proyects.resx">
       <DependentUpon>UI_Proyects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl.resx">
+      <DependentUpon>UserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsersFRM.resx">
       <DependentUpon>UsersFRM.cs</DependentUpon>
