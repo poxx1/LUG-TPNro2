@@ -20,10 +20,10 @@ namespace LastraJulianTP2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Validate();
+            Validates();
         }
 
-        private void Validate()
+        public void Validates()
         {
             try
             {

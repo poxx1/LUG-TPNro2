@@ -9,9 +9,11 @@ namespace DAL_SQL
 {
     public class Disconnected
     {
-        public void Update(string query,DataSet ds)
+        public void Update(DataSet ds)
         {
             var cn = new SqlConnection(@"Server=DESKTOP-H982BU0\SQLEXPRESS; Initial Catalog=LastraJulianDev;Integrated Security=True");
+
+            var query = "SELECT* FROM Clients";
 
             var da = new SqlDataAdapter(query,cn);
 
@@ -52,5 +54,6 @@ namespace DAL_SQL
 
             return ds;
         }
+      
     }
 }
