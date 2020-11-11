@@ -11,7 +11,6 @@ namespace BLL_Negocio
         {
         //Me traigo el DS de la bd
         
-
         //Creo una Lista
         }
     }
