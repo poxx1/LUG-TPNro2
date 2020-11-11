@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mapper", "Mapper\Mapper.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL_SQL", "DAL_SQL\DAL_SQL.csproj", "{10C3030A-5FD8-49F3-BD52-6E467FE1C1E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UC", "UC\UC.csproj", "{59E84280-53F2-46CB-981E-F70B3BAF961A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UC", "UC\UC.csproj", "{59E84280-53F2-46CB-981E-F70B3BAF961A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

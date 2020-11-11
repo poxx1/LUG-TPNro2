@@ -1,8 +1,8 @@
-﻿using System;
+﻿using BLL_Negocio;
+using System;
 using System.Globalization;
 using System.Threading;
 using System.Windows.Forms;
-using BLL_Negocio;
 
 namespace LastraJulianTP2
 {

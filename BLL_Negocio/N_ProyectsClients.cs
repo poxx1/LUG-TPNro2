@@ -7,11 +7,11 @@ namespace BLL_Negocio
 {
     public class N_ProyectsClients:N_Proyects
     {
-        public override bool List(List<M_Proyects> l)
-        {
-        //Me traigo el DS de la bd
+        //public override bool List(List<M_Proyects> l)
+        //{
+        ////Me traigo el DS de la bd
         
-        //Creo una Lista
-        }
+        ////Creo una Lista
+        //}
     }
 }

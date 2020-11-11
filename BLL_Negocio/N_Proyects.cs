@@ -62,10 +62,10 @@ namespace BLL_Negocio
             archivoxml.Close();
         }
 
-        public virtual DataSet List()
-        {
-            var n = new Mapper.M_Proyects();
-            return n.List();
-        }
+        //public virtual DataSet List()
+        //{
+        //    var n = new Mapper.M_Proyects();
+        //    return n.List();
+        //}
     }
 }
