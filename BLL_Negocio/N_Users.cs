@@ -8,12 +8,6 @@ namespace BLL_Negocio
 {
     public class N_Users
     {
-        //public List<BE_Propiedades.BEUsers> LoadUsers()
-        //{
-        //    var us = new MUsers();
-        //    return us.LoadUsers();
-        //}
-
         public bool Insert(BE_Users u)
         {
             var us = new MUsers();

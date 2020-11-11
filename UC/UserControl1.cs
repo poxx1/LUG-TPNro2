@@ -31,7 +31,12 @@ namespace UC
         private void button3_Click(object sender, EventArgs e)
         {
             var dal = new DAL_SQL.Disconnected();
+
+            dataGridView1.DataSource = null;
+
             dal.Update(dst);
+
+            label2.Text = "La base de datos de clientes, ha sido actualizada";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -40,12 +45,20 @@ namespace UC
 
             dst = m_Clients.Read();
 
+            dataGridView1.DataSource = null;
             dataGridView1.DataSource = dst.Tables[0];
+
+            label2.Text = "Los datos fueron cargados con Exito";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            M_Clients m_Clients = new M_Clients();
+            dst = m_Clients.Read();
 
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = dst.Tables[0];
+            label2.Text = "Se descartaron los cambios realizados.";
         }
     }
 }

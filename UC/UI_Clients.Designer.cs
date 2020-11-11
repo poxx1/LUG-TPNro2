@@ -71,7 +71,7 @@
             this.userControl11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.userControl11.Location = new System.Drawing.Point(12, 6);
             this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(339, 349);
+            this.userControl11.Size = new System.Drawing.Size(339, 363);
             this.userControl11.TabIndex = 4;
             // 
             // UI_Clients
@@ -80,7 +80,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(579, 367);
+            this.ClientSize = new System.Drawing.Size(579, 373);
             this.Controls.Add(this.userControl11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
