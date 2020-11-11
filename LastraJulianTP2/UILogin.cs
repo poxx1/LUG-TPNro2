@@ -68,7 +68,7 @@ namespace LastraJulianTP2
             //Si no pongo nada me logueo d1 porque alta paja escribir sino
             if (textBox1.Text == "" && textBox2.Text == "")
             {
-                var nf = new UI_Core();
+                var nf = new MDIParent1();
                 nf.Show();
                 Hide();
             }
@@ -84,7 +84,7 @@ namespace LastraJulianTP2
 
                 if (userBack[1] == user.PassWord)
                 {
-                    var nf = new UI_Core();
+                    var nf = new MDIParent1();
                     nf.Show();
                     Hide();
                 }

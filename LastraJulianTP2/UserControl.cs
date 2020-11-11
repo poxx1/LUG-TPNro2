@@ -20,7 +20,7 @@ namespace LastraJulianTP2
         private void button4_Click(object sender, EventArgs e)
         {
             Close();
-            var st = new UI_Core();
+            var st = new MDIParent1();
             st.Show();
         }
     }

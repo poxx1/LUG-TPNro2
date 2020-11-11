@@ -1,13 +1,15 @@
 ﻿using BE_Propiedades;
+using Mapper;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 
 namespace BLL_Negocio
 {
-    public class XML
+    public class N_Proyects
     {
         public List<BE_Programs> Read()
         {
@@ -58,6 +60,12 @@ namespace BLL_Negocio
             archivoxml.WriteEndElement();
             archivoxml.WriteEndDocument();
             archivoxml.Close();
+        }
+
+        public virtual DataSet List()
+        {
+            var n = new Mapper.M_Proyects();
+            return n.List();
         }
     }
 }

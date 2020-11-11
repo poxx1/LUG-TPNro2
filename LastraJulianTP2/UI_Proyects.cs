@@ -110,6 +110,8 @@ namespace LastraJulianTP2
         private void button4_Click(object sender, EventArgs e)
         {
             Close();
+            MDIParent1 m = new MDIParent1();
+            m.Show();
         }
     }
 }

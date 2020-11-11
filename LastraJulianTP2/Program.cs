@@ -16,7 +16,7 @@ namespace LastraJulianTP2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UI_Proyects());
+            Application.Run(new UILogin());
         }
     }
 }

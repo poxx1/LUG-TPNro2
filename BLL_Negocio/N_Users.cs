@@ -10,23 +10,23 @@ namespace BLL_Negocio
     {
         public bool Insert(BE_Users u)
         {
-            var us = new MUsers();
+            var us = new M_Users();
             return us.Insert(u);
         }
         public bool Update(BE_Users u)
         {
-            var us = new MUsers();
+            var us = new M_Users();
             return us.Update(u);
         }
         public bool Delete(BE_Users u)
         {
-            var us = new MUsers();
+            var us = new M_Users();
             return us.Delete(u);
         }
 
         public string[] LoadUsers(BE_Users u)
         {
-            var us = new MUsers();
+            var us = new M_Users();
             return us.Validate(u);
         }
     }

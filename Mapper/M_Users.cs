@@ -3,7 +3,7 @@ using DAL_SQL;
 
 namespace Mapper
 {
-    public class MUsers
+    public class M_Users
     {
         public bool Insert(BE_Propiedades.BE_Users user)
         {

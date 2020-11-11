@@ -74,6 +74,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="UILogin.cs">
       <SubType>Form</SubType>
@@ -88,12 +94,6 @@
     </Compile>
     <Compile Include="UI_Client.Designer.cs">
       <DependentUpon>UI_Client.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI_Core.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI_Core.Designer.cs">
-      <DependentUpon>UI_Core.cs</DependentUpon>
     </Compile>
     <Compile Include="UI_LoginEN-US.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -145,6 +145,9 @@
     <Compile Include="UsersFRM.Designer.cs">
       <DependentUpon>UsersFRM.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -159,9 +162,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI_Client.resx">
       <DependentUpon>UI_Client.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI_Core.resx">
-      <DependentUpon>UI_Core.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI_LoginEN-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>

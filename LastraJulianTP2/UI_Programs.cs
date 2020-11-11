@@ -15,18 +15,20 @@ namespace LastraJulianTP2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var x = new XML();
+            var x = new N_Proyects();
             x.Create(textBox1.Text, textBox2.Text, textBox3.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+            MDIParent1 m = new MDIParent1();
+            m.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var x = new XML();
+            var x = new N_Proyects();
             x.Write(textBox1.Text, textBox2.Text, textBox3.Text);
           
             listBox1.DataSource = x.Read();
@@ -35,7 +37,7 @@ namespace LastraJulianTP2
 
         private void button4_Click(object sender, EventArgs e)
         {
-            var x = new XML();
+            var x = new N_Proyects();
             listBox1.DataSource = x.Read();
             listBox1.DisplayMember = "name";
         }
